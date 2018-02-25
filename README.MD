@@ -1,8 +1,5 @@
-Title         : 仿GUCCI官网的登陆注册模块
-Author        : Sober
-Logo          : True
-
-[TITLE]
+仿gucci官网登陆注册
+=============
 
 # 本项目使用 
 
