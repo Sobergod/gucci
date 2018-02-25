@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7cm</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/header.1.css">
+</head>
+
+<body>
+    <div id="seven-header">
+        <div class="seven-header-container">
+            <nav class="seven-navbar">
+                <div class="seven-navbar-logo">
+                    <a href="">
+                        <img src="./images/gucci-logo.png" alt="">
+                    </a>
+                </div>
+                <!-- 控制菜单栏开关 -->
+                <button class="seven-btn">
+                    <i class="icon-reorder"></i>
+                    菜单
+                </button>
+                <div class="seven-navbar-menu">
+                    <div class="seven-navbar-menu-container">
+                        <ul class="seven-nav seven-nav-main">
+                            <li class="seven-nav-menu seven-nav-menu-bottom">
+                                <a href="javascript:;">时装秀1</a>
+                                <div class=""></div>
+                                <div class="seven-nav-menu-sub" >
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-bottom">
+                                <a href="javascript:;">时装秀2</a>
+                                <div class="seven-nav-menu-sub" >
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-bottom">
+                                <a href="javascript:;">时装秀3</a>
+                                <div class="seven-nav-menu-sub" >
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-bottom">
+                                <a href="javascript:;">时装秀4</a>
+                                <div class="seven-nav-menu-sub" >
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-bottom">
+                                <a href="javascript:;">时装秀5</a>
+                                <div class="seven-nav-menu-sub">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-bottom">
+                                <a href="javascript:;">时装秀6</a>
+                                <div class="seven-nav-menu-sub" >
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="seven-nav seven-nav-others seven-nav-others-left">
+                            <li class="seven-nav-menu seven-nav-menu-left">
+                                <i></i>
+                                <a href="javascript:;">中国</a>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-left ">
+                                <i></i>
+                                <a class="language-btn" href="javascript:;">简体中文</a>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-left">
+                                <a href="javascript:;">客户服务</a>
+                            </li>
+                        </ul>
+                        <ul class="seven-nav seven-nav-others seven-nav-others-right">
+                            <li class="seven-nav-menu seven-nav-menu-right">
+                                <span>
+                                    <i></i>
+                                    <a href="javascript:;">登陆</a>
+                                </span>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-right">
+                                <span>
+                                    <a href="javascript:;">
+                                        <i class="icon-heart-empty"></i>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-right">
+                                <a href="javascript:;">
+                                    <i class="icon-briefcase"></i>
+                                    <span>购物袋</span>
+                                </a>
+                            </li>
+                            <li class="seven-nav-menu seven-nav-menu-right seven-search-box ">
+                                <div class="search-box-group float-right">
+                                    <input class="search-box-input" type="text" placeholder="搜索">
+                                    <a class="search-box-btn" href="javascript:;">
+                                        <i class="icon-search"></i>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="test"></div>
+    <script src="./js/jq3.3.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        //console.log($(window).width());
+        if ($(window).width() >= 1023) {
+            $(".search-box-input").focus(function () {
+                $(".search-box-group").addClass('search-active');
+                $(".search-box-btn").addClass("search-btn-active");
+            }).blur(function () {
+                $(".search-box-group").removeClass('search-active');
+                $(".search-box-btn").removeClass("search-btn-active");
+            });
+            $(".search-box-btn").mousedown(function (e) {
+                // 阻止事件
+                e.preventDefault();
+            }).click(function () {
+                console.log(1);
+            });
+        } else {
+            $(".search-box-btn").click(function () {
+                console.log(0);
+            });
+        }
+        // $(".seven-nav-main").on("mouseover","li",function(event) {
+        //     console.log(this);
+        //     $(this).children(".seven-nav-menu-sub").fadeIn();
+        // });
+        // $(".seven-nav-main").on("mouseout","li",function(event) {
+        //     console.log(this);
+        //     $(this).children(".seven-nav-menu-sub").fadeOut();
+        // });
+    </script>
+</body>
+
+</html>

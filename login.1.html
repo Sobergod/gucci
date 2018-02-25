@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/login/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/logincss/normalize.css">
+    <link rel="stylesheet" href="/public/logincss/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/logincss/login.css">
+</head>
+
+<body>
+    <div id="login-wrap">
+        <div class="container login-container">
+            <div class="row login-header">
+                <div class="col-xs-12 col-md-12 col-lg-12 login-title">
+                    <span>登录</span>
+                </div>
+            </div>
+            <div class="row login-bottom">
+                <div class="col-xs-12 col-md-12 col-lg-6 login-left">
+                    <form id="loginForm" action="">
+                        <div class="login-left-form">
+                            <div class="login-form-group email-group">
+                                <span>电子邮箱</span>
+                                <input name="login_email" type="email">
+                            </div>
+                            <div class="login-form-group password-group">
+                                <span>密码</span>
+                                <input name="login_password" type="password">
+                            </div>
+                            <div class="login-form-group remember-group">
+                                <label for="remember-check">
+                                    <i></i>
+                                    <input id="remember-check" type="checkbox">
+                                    <span>记住我</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="login-form-btn">
+                            <input type="submit" value="登录">
+                        </div>
+                        <div class="login-form-forget-btn">
+                            <a id="forgetBtn" href="javascript:;">忘记密码?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-6 login-right">
+                    <div class="login-right-info">
+                        <div class="login-info-title">
+                            没有账号?
+                        </div>
+                        <p class="login-info-tip-title">拥有7cm账号您将获得以下权利：</p>
+                        <ul class="login-info-tip">
+                            <li>保存您的心愿清单</li>
+                            <li>个性化您的推荐内容</li>
+                            <li>订单寄送追踪及退换货管理创建账户</li>
+                        </ul>
+                        <div id="joinUs" class="login-info-btn">
+                            创建你的账号
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注册弹出层 -->
+    <div id="register-dialog" style="display:none;">
+        <div class="dialog-scroll">
+            <div class="container register-dialog-container">
+                <div class="dialog-close-btn">
+                    <i id="close-btn" class="icon-remove"></i>
+                </div>
+                <div class="register-dialog-content">
+                    <div class="register-dialog-title">
+                        <p>创建您的账户</p>
+                    </div>
+                    <div class="register-form-container">
+                        <form id="commentForm" action="">
+                            <div class="login-form-group register-form-group">
+                                <p>邮箱号码</p>
+                                <input name="emailnumber" type="email" placeholder="输入正确的邮箱">
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <div class="picture-validate-group">
+                                    <div class="validate-left">
+                                        <p>图形验证码</p>
+                                        <input id="pic_validator" name="pic_validator" type="text" placeholder="输入正确的图片验证码">
+                                    </div>
+                                    <div class="validate-right">
+                                        <div id="v_container"></div>
+                                        <span>点击图片更换</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <div class="picture-validate-group">
+                                    <div class="valiate-phone-left">
+                                        <p>邮箱验证码</p>
+                                        <input id="email_validator" name="email_validator" type="text" placeholder="输入收到的验证码">
+                                    </div>
+                                    <div class="valiate-phone-right">
+                                        <a href="">发送验证码</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <p>设置密码</p>
+                                <input id="signpassword1" name="signpassword1" type="password" placeholder="至少6位且包含数字大小写和特殊符号">
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <p>确认密码</p>
+                                <input id="signpassword2" name="signpassword2" type="password" placeholder="确认密码">
+                            </div>
+                            <div class="register-form-group accept-checkbox-group">
+                                <label for="accept-tip1">
+                                    <input id="accept-tip1" type="checkbox">
+                                    <span>我愿意接收Gucci邮件获取特别优惠，新款推荐及更多内容</span>
+                                </label>
+                                <label for="accept-tip2">
+                                    <input id="accept-tip2" name="agree" type="checkbox">
+                                    <span>创建帐号代表您已接受Gucci的隐私政策和销售条款</span>
+                                </label>
+                            </div>
+                            <div class="register-form-group">
+                                <div class="create-btn">
+                                    <input type="submit" value="创建账号">
+                                    <!-- <a id="signupForm" href="javascript:;">创建账号</a> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 忘记密码弹出层 -->
+    <div id="forget-dialog" style="display:none">
+        <div class="dialog-scroll">
+            <div class="container forget-dialog-container">
+                <div class="dialog-close-btn">
+                    <i id="close-forget-btn" class="icon-remove"></i>
+                </div>
+                <div class="forget-dialog-content">
+                    <div class="forget-dialog-title">
+                        <p>忘记了密码?</p>
+                    </div>
+                    <div class="forget-dialog-tips">
+                        <p>请输入您注册时的电子邮箱</p>
+                        <p>如果有任何疑问，请联系7cm中国官网客服：400.8210.582</p>
+                    </div>
+                    <div class="forget-form-container">
+                        <form id="forgetForm" action="">
+                            <div class="login-form-group forget-form-group">
+                                <p>邮箱号码</p>
+                                <input id="forget_email" name="forget_email" type="email" placeholder="输入正确的邮箱">
+                            </div>
+                            <div class="register-form-group">
+                                <div class="create-btn">
+                                    <input type="submit" value="提交">
+                                    <!-- <a id="signupForm" href="javascript:;">创建账号</a> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/loginjs/jq3.3.1.min.js"></script>
+    <script src="/public/loginlib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/loginlib/jquery-validation/jquery.validate.js"></script>
+    <script src="/public/loginlib/jquery-validation/messages_zh.js"></script>
+    <script src="/public/loginjs/login.js"></script>
+    <script src="/public/loginjs/gVerify.js"></script>
+</body>
+
+</html>

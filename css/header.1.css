@@ -1,0 +1,264 @@
+/* body {
+    background: #888;
+} */
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+#seven-header {
+    width: 100%;
+    height: 120px;
+    background: #25211E;
+}
+.seven-navbar-logo {
+    position: relative;
+    height: 69px;
+    padding: 27px 0 16px 0;
+    text-align: center;
+    font-size: 0;
+}
+.seven-navbar-logo img {
+    width: 160px;
+}
+.seven-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
+    min-width: initial;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #25211E;
+    font-size: 18px;
+    color: #666;
+
+}
+.seven-btn:focus{
+    outline: none;
+}
+/* 导航公共样式 */
+.seven-nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.seven-nav-menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+.seven-nav-menu>a{
+    display: block;
+    text-decoration: none;
+    font-family: "FuturaLT-Heavy", "NotoSansCJKsc-demilight", "NotoSansCJKsc-Normal", "PingFangSC-Regular", "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei", sans-serif;
+}
+/* 主导航区 */
+.seven-nav-menu-bottom>a {
+    padding: 0 15px;
+    height: 51px;
+    line-height: 30px;
+    color: #fff;
+}
+.seven-nav-menu-bottom>a:hover {
+    color: #C1B497;
+}
+.seven-nav-menu-sub {
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 90%;
+    height: 200px;
+    margin: 0 5%;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+/* 其他导航区  start*/
+.seven-nav-others {
+    position: absolute;
+    font-size: 12px;
+    top: 20px;
+}
+.seven-nav-others-left {
+    left: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+.seven-nav-others-right {
+    right: 15px;
+}
+.seven-nav-menu-right a,
+.seven-nav-menu-left a {
+    display: inline-block;
+    color: #C1B497;
+    height: 12px;
+    line-height: 12px;
+    padding: 0 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "FuturaLT-Book", "NotoSansCJKsc-Regular", "NotoSansCJKsc-Normal", "PingFangSC-Regular", "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei", sans-serif;
+}
+.seven-nav-menu-left a {
+    padding: 0 12px;
+}
+.seven-nav-menu-right a:hover,
+.seven-nav-menu-left a:hover {
+    color: #fff;
+    
+}
+.seven-nav-others-box {
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    font-size: 12px;
+}
+.language-btn {
+    border-left: 1px solid #4B4B4B;
+    border-right: 1px solid #4B4B4B;
+}
+/* 搜索按钮 */
+.seven-search-box {
+    position: relative;
+    width: 116px;
+    top: 0;
+}
+.search-box-group {
+    padding: 7px 41px 7px 11px;
+    border: none;
+    width: auto;
+    height: 30px;
+    background-color: #1d1a18;
+    transition: all 1s ease-out;
+    
+}
+.search-box-group .search-box-input {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #646060;
+    line-height: 16px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-family: "FuturaLT-Book", "NotoSansCJKsc-DemiLight", "NotoSansCJKsc-Normal", "PingFangSC-Regular", "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei", sans-serif;
+    
+}
+/* 输入框动效 */
+.search-active {
+    /* position: relative; */
+    background-color: #fff; 
+    width: 290px;   
+}
+.search-box-group .search-box-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: block;
+    padding: 0 8px;
+    height: 100%;
+    background-color: #34302B;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    transition: background-color .5s linear, color .5s linear;
+}
+/* 搜索按钮动效 */
+.search-btn-active {
+    background:#C1B497 !important;
+    color:#CEC3AB !important;
+    transition: all .3s linear;
+}
+/* 其他导航 end */
+@media screen and (max-width: 767px){
+    #seven-header {
+        height: 50px !important;
+    }
+    .seven-navbar-logo {
+        padding: 16px 0 10px 0 !important;
+        text-align: center;
+        height: 50px !important;
+    }
+    .seven-navbar-logo img {
+        width: 96px;
+    }
+    .seven-btn {
+        top: 5px;
+        display: inline-block;
+        height: 40px !important;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .seven-nav-main {
+        display: none;
+    }
+    .seven-nav-others {
+        top: 10px;
+    }
+    .seven-nav-others-left {
+        display: none;
+    }
+    .seven-nav-others-right {
+        font-size: 18px;
+    }
+    .seven-nav-others-right  span {
+        display: none;
+    }
+    .seven-nav-others-box span {
+        display: none;
+    }
+    .seven-search-box {
+        width: 40px;
+    }
+    .search-box-group {
+        padding: 0;
+        width: auto;
+    }
+    .search-box-group .search-box-input{
+        display: none;
+    }
+    .search-box-btn {
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    #seven-header {
+        height: 68px;
+    }
+    .seven-navbar-logo {
+        position: static;
+        z-index: 1;
+        height: 68px;
+    }
+    .seven-navbar-logo img {
+        width: 110px;
+    }
+    .seven-btn {
+        display: inline-block;
+    }
+    .seven-nav-main {
+        display: none;
+    }
+    .seven-nav-others {
+        top: 10px;
+    }
+    .seven-nav-others-left {
+        display: none;
+    }
+    .seven-nav-others-right a {
+        padding: 0 5px;
+    }
+    .seven-nav-others-right span {
+        display: none;
+    }
+    .seven-nav-others-box span {
+        display: none;
+    }
+}
