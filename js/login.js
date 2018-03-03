@@ -64,6 +64,10 @@ $().ready(function () {
         //return this.optional(element) || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{6,16}$/.test(value);
         return this.optional(element) || verifyCode.validate(value);
     }, "图片验证码有误");
+    $.validator.addMethod("picValidate1", function (value, element, params) {
+        //return this.optional(element) || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{6,16}$/.test(value);
+        return this.optional(element) || verifyCode1.validate(value);
+    }, "图片验证码有误");
     // 在键盘按下并释放及提交后验证提交表单
     $("#commentForm").validate({
         onkeyup: false,
@@ -129,7 +133,7 @@ $().ready(function () {
             findemail_validator:"required",
             pic_validator1: {
                 required: true,
-                picValidate: true,
+                picValidate1: true,
                 minlength: 4
             },
             findpassword1: {
@@ -158,7 +162,7 @@ $().ready(function () {
             pic_validator1: {
                 required: "请输入验证码",
                 minlength: "图片验证码不能为空",
-                picValidate: "图片验证码有误"
+                picValidate1: "图片验证码有误"
             },
             findemail_validator: "邮箱验证码不能为空",
             agree: "请接受我们的声明",
