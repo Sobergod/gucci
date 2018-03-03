@@ -408,7 +408,29 @@ input.error {
 }
 
 /* 忘记密码弹出层 end */
-
+#forget-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+/* 找回密码弹出层 */
+#findPass-dialog {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    padding-bottom: 2%;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .6)
+}
 @media screen and (max-width: 767px) {
     .login-bottom {
         padding-top: 20px;

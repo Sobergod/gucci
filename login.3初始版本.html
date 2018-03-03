@@ -105,7 +105,7 @@
                                         <input id="email_validator" name="email_validator" type="text" placeholder="输入收到的验证码">
                                     </div>
                                     <div class="valiate-phone-right">
-                                        <a href="">发送验证码</a>
+                                        <a href="javascript:;">发送验证码</a>
                                     </div>
                                 </div>
                             </div>
@@ -172,6 +172,65 @@
             </div>
         </div>
     </div>
+
+    <!-- 修改密码弹出层 -->
+    <div id="findPass-dialog" style="display:none">
+        <div class="dialog-scroll">
+            <div class="container register-dialog-container">
+                <div class="dialog-close-btn">
+                    <i id="find-close-btn" class="icon-remove"></i>
+                </div>
+                <div class="register-dialog-content">
+                    <div class="register-dialog-title">
+                        <p>重置密码</p>
+                    </div>
+                    <div class="register-form-container">
+                        <form id="findPassForm" action="">
+                            <div class="login-form-group register-form-group">
+                                <div class="picture-validate-group">
+                                    <div class="validate-left">
+                                        <p>图形验证码</p>
+                                        <input id="pic_validator1" name="pic_validator1" type="text" placeholder="输入正确的图片验证码">
+                                    </div>
+                                    <div class="validate-right">
+                                        <div id="v_container1"></div>
+                                        <span>点击图片更换</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <div class="picture-validate-group">
+                                    <div class="valiate-phone-left">
+                                        <p>邮箱验证码</p>
+                                        <input id="findemail_validator" name="findemail_validator" type="text" placeholder="输入收到的验证码">
+                                    </div>
+                                    <div class="valiate-phone-right">
+                                        <a href="javascript:;">发送验证码</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <p>设置密码</p>
+                                <input id="findpassword1" name="findpassword1" type="password" placeholder="至少6位且包含数字大小写和特殊符号">
+                            </div>
+                            <div class="login-form-group register-form-group">
+                                <p>确认密码</p>
+                                <input id="findpassword2" name="findpassword2" type="password" placeholder="确认密码">
+                            </div>
+                            <div class="register-form-group">
+                                <div class="create-btn">
+                                    <input type="submit" value="确认修改">
+                                    <!-- <a id="signupForm" href="javascript:;">确认修改</a> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/jq3.3.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/jquery-validation/jquery.validate.js"></script>
