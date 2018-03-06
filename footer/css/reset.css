@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #C3B497;
+}
+
+a:hover {
+    color: #C3B497;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    /*超链接无下划线*/
+}
+
+a:hover {
+    text-decoration: underline;
+    /*鼠标放上去有下划线*/
+}

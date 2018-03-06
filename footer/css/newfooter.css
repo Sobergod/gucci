@@ -1,0 +1,242 @@
+.test {
+    background-color: #888;
+    height: 2000px;
+    border: 1px solid #000;
+}
+
+.spice-footer {
+    background-color: #25211E;
+    font-family: "FuturaLT-Heavy", "NotoSansCJKsc-Medium", "NotoSansCJKsc-Normal", "PingFangSC-Regular", "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei", sans-serif;
+    font-size: 10px;
+    color: #C3B497;
+    letter-spacing: 0;
+}
+
+.go-top {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background-color: #221D18;
+    text-align: center;
+}
+
+.service-button-group {
+    padding: 20px 20px 15px 20px;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 20px solid #2F2B28;
+}
+
+.service-item {
+    position: relative;
+    border-bottom: 1px solid #65605F;
+}
+
+.service-item .a {
+    display: block;
+    padding: 20px 5px;
+    cursor: pointer;
+    color: #959595;
+}
+
+.service-item .a:hover {
+    color: #C3B497;
+    transition: color .2s linear;
+}
+
+.spice-toggle-wrap {
+    padding: 0 20px 10px 20px;
+}
+
+.panel-group {
+    background-color: #25211E;
+}
+
+.panel {
+    padding: 0;
+    background-color: #25211E;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.list-group {
+    border-top: 0;
+}
+
+.panel-group .panel-heading {
+    position: relative;
+    padding: 0;
+    border-bottom: 1px solid #65605F;
+}
+
+.panel-heading .a {
+    padding: 20px 15px;
+    display: block;
+    color: #fff;
+    font-size: 10px;
+}
+
+.panel-heading a:link,
+.panel-heading a:visited,
+.panel-heading a:hover {
+    text-decoration: none;
+}
+.panel-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.panel-body ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+.panel-body ul li {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #959595;
+}
+.panel-body ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    color: #959595;
+}
+.panel-body ul li a:hover {
+    text-decoration: none;
+    color: #C2B295;
+}
+.memail {
+    padding: 5px 20px;
+    width: 70%;
+    border: none;
+    background-color: #1D1A17;
+}
+.inputmail {
+    position: relative;
+    cursor: pointer;
+}
+.msubmit {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 27px;
+    margin: 0;
+    padding: 0 8px;
+    line-height: 27px;
+    border: none;
+    font-size: 17px;
+    background-color: #352C25;
+}
+.icon-submit {
+    display: block;
+    margin: 0 auto;
+    font-weight: 900;
+}
+.msubmit:hover {
+    background: #4B4B4B;
+    transition: all .2s linear;
+}
+.icon {
+    font-size: 12px;
+}
+
+.icon-jiantou,
+.icon-iconfontadd {
+    float: right;
+    color: #65605F;
+}
+.guanzhu-icon {
+    position: absolute;
+    top: 29%;
+    left: 5px;
+    color: #959595;
+    font-size: 17px;
+}
+.panel-body ul li:hover .weibo {
+    color: tomato;
+}
+.panel-body ul li:hover .weixin {
+    color: rgb(21, 153, 87);
+}
+.panel-body ul li:hover .youku {
+    color: sandybrown;
+}
+/* 最底部版权信息等样式 start*/
+.footer-info-container {
+    background-color: #25211E;
+}
+.footer-info-wrap {
+    padding: 0 40px;
+    margin-bottom: 5px;
+}
+.footer-info-wrap p {
+    margin: 0;
+    color: #959595;
+}
+.footer-info-wrap p.appname {
+    font-size: 20px;
+}
+.footer-copyright-wrap {
+    padding: 15px 40px;
+    text-align: center;
+    color: #959595;
+}
+/* 最底部版权信息等样式 end*/
+
+/* 弹窗公共样式 start */
+
+.dialog-wrap {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.dialog {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    background-color: #fff;
+    color: #000;
+}
+
+.close i {
+    font-size: 18px;
+}
+
+.dialog-head .title {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.dialog-content {
+    padding-top: 10px;
+    text-align: center;
+    color: #959595;
+}
+
+.bottom-close-btn {
+    width: 245px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-size: 10px;
+    background-color: #C2B295;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bottom-close-btn:hover {
+    background-color: #D5CAB4;
+}
+
+.noScroll {
+    overflow-y: hidden;
+}
+/* 弹窗公共样式 end */
